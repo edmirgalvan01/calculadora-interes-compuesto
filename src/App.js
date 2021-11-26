@@ -32,7 +32,12 @@ function App() {
                }}
                onSubmit={handleSubmit}
             >
-               <Input name='deposit' label='Deposito inicial' />
+               <Form>
+                  <Input name='deposit' label='Deposito inicial' />
+                  <Input name='contribution' label='Contribucion anual' />
+                  <Input name='year' label='Años' />
+                  <Input name='rate' label='Interes estimado' />
+               </Form>
             </Formik>
          </Section>
       </Container>
