@@ -7,8 +7,20 @@ const Container = styled.div`
    height: 100%;
 `;
 
+const Section = styled.section`\
+   background-color:#eee;
+   border-top: 2px solid palevioletred;
+   padding: 20px 25px;
+   width: 50%;
+   align-items: center;
+`;
+
 function App() {
-   return <Container>Hola mundo</Container>;
+   return (
+      <Container>
+         <Section>Hola mundo</Section>
+      </Container>
+   );
 }
 
 export default App;
