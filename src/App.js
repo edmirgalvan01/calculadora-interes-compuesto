@@ -1,21 +1,8 @@
-import styled from 'styled-components';
 import { Formik, Form } from 'formik';
 import Input from './components/Input';
-
-const Container = styled.div`
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-`;
-
-const Section = styled.section`\
-   background-color:#eee;
-   border-top: 2px solid palevioletred;
-   padding: 20px 25px;
-   width: 50%;
-   align-items: center;
-`;
+import Button from './components/Button';
+import Container from './components/Container';
+import Section from './components/Section';
 
 function App() {
    const handleSubmit = () => {};
@@ -37,6 +24,7 @@ function App() {
                   <Input name='contribution' label='Contribucion anual' />
                   <Input name='year' label='Años' />
                   <Input name='rate' label='Interes estimado' />
+                  <Button>Calcular</Button>
                </Form>
             </Formik>
          </Section>
