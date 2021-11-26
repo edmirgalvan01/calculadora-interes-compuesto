@@ -1,21 +1,14 @@
+import styled from 'styled-components';
+
+const Container = styled.div`
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+`;
+
 function App() {
-   return (
-      <div className='App'>
-         <header className='App-header'>
-            <p>
-               Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-               className='App-link'
-               href='https://reactjs.org'
-               target='_blank'
-               rel='noopener noreferrer'
-            >
-               Learn React
-            </a>
-         </header>
-      </div>
-   );
+   return <Container>Hola mundo</Container>;
 }
 
 export default App;
